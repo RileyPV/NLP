@@ -61,3 +61,42 @@ print(nepal)
 english = nepal.translate(to='en')
 
 print(english)
+
+#Change plural words to singular
+from textblob import Word
+index = Word('index')
+
+
+#Change singular to plural
+cacti = Word('cacti')
+
+print(index.pluralize())
+
+print(cacti.singularize())
+
+#wordlist
+animals = TextBlob('dog cat fish bird').words
+print(animals.pluralize())
+
+#spellcheck and corrections
+word = Word('theyr')
+
+print(word.spellcheck())
+
+print(word.correct())
+
+#from nltk.stem import WordNetLemmatizer
+
+word1 = Word('studies')
+word2 = Word('varieties')
+
+print(word1.stem())
+print(word2.stem())
+
+#print(word1.lemmatize())
+#print(word2.lemmatize())
+
+happy = Word('happy')
+#print(happy.definitions)
+print(happy.synsets)
+
