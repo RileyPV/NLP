@@ -54,7 +54,7 @@ for (key,value) in mylist.items():
         mydict[key] = value
 
 #print(len(mydict))
-#print(mydict)
+print(mydict)
 
 wordcloud = WordCloud(colormap='prism',background_color='white')
 
